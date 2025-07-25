@@ -18,7 +18,7 @@ cd vulnerability-checker
 pip install -r requirements.txt
 ```
 
-### 3. Execute o script
+### 3. Execute o código
 ```bash
 python checker.py
 ```
