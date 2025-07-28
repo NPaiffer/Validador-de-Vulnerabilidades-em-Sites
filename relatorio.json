@@ -1,0 +1,29 @@
+{
+    "Content-Security-Policy": {
+        "presente": true,
+        "descricao": "Evita execução de scripts maliciosos"
+    },
+    "X-Content-Type-Options": {
+        "presente": true,
+        "descricao": "Evita sniffing de conteúdo"
+    },
+    "X-Frame-Options": {
+        "presente": true,
+        "descricao": "Evita clickjacking"
+    },
+    "Strict-Transport-Security": {
+        "presente": true,
+        "descricao": "Força o uso de HTTPS"
+    },
+    "Referrer-Policy": {
+        "presente": true,
+        "descricao": "Controla envio do header Referer"
+    },
+    "Permissions-Policy": {
+        "presente": false,
+        "descricao": "Restringe uso de APIs sensíveis"
+    },
+    "certificado_ssl": {
+        "erro": "can't subtract offset-naive and offset-aware datetimes"
+    }
+}

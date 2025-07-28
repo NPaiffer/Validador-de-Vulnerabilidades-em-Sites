@@ -4,6 +4,7 @@ import datetime
 import ssl
 import socket
 from urllib.parse import urlparse
+from datetime import timezone
 
 SECURITY_HEADERS = {
     "Content-Security-Policy": "Evita execução de scripts maliciosos",
@@ -41,7 +42,7 @@ class SecurityHeaderChecker:
                 with context.wrap_socket(sock, server_hostname=hostname) as ssock:
                     cert = ssock.getpeercert()
                     expira_em = datetime.datetime.strptime(cert['notAfter'], '%b %d %H:%M:%S %Y %Z')
-                    dias_restantes = (expira_em - datetime.datetime.utcnow()).days
+                    dias_restantes = (expira_em - datetime.datetime.now(timezone.utc)).days
                     self.resultado["certificado_ssl"] = {
                         "expira_em": expira_em.strftime('%Y-%m-%d'),
                         "dias_restantes": dias_restantes

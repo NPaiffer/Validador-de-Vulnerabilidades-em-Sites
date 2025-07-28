@@ -1,0 +1,9 @@
+Resultado para: https://eldenring.wiki.fextralife.com/Talisman+of+the+Dread
+
+[Presente] Content-Security-Policy - Evita execução de scripts maliciosos
+[Presente] X-Content-Type-Options - Evita sniffing de conteúdo
+[Presente] X-Frame-Options - Evita clickjacking
+[Presente] Strict-Transport-Security - Força o uso de HTTPS
+[Presente] Referrer-Policy - Controla envio do header Referer
+[Ausente] Permissions-Policy - Restringe uso de APIs sensíveis
+[SSL] Erro: can't subtract offset-naive and offset-aware datetimes
