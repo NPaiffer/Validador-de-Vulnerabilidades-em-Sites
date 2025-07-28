@@ -70,6 +70,11 @@ class SecurityHeaderChecker:
         with open(nome_arquivo, 'w', encoding='utf-8') as f:
             json.dump(self.resultado, f, indent=4, ensure_ascii=False)
 
+    def analisar(self):
+        self.verificar_headers()
+        self.verificar_ssl_expiration()
+
+
 if __name__ == "__main__":
     url = input("Digite a URL do site (ex: https://exemplo.com): ").strip()
     checker = SecurityHeaderChecker(url)
